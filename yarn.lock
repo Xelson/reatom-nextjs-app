@@ -185,6 +185,121 @@
   resolved "https://registry.yarnpkg.com/@pkgjs/parseargs/-/parseargs-0.11.0.tgz#a77ea742fab25775145434eb1d2328cf5013ac33"
   integrity sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==
 
+"@reatom/async@^3.15.2":
+  version "3.15.2"
+  resolved "https://registry.yarnpkg.com/@reatom/async/-/async-3.15.2.tgz#9fabd70a8b3e56c34cbe3290b259279b92a58574"
+  integrity sha512-Q9pABjp96oEEIBjgLnJerEV0GMojXiUgnP3pPZMJfgz78oPsM4RYiOTNHfHq2WM8mw12kIsvinSMAo9Z+4k+SQ==
+  dependencies:
+    "@reatom/core" "^3.5.0"
+    "@reatom/effects" "^3.7.0"
+    "@reatom/hooks" "^3.2.0"
+    "@reatom/primitives" "^3.5.0"
+    "@reatom/utils" "^3.4.0"
+
+"@reatom/core@^3.1.1", "@reatom/core@^3.2.0", "@reatom/core@^3.3.0", "@reatom/core@^3.4.0", "@reatom/core@^3.5.0", "@reatom/core@^3.8.1", "@reatom/core@^3.8.3":
+  version "3.8.3"
+  resolved "https://registry.yarnpkg.com/@reatom/core/-/core-3.8.3.tgz#6c4ce3bc29f935f723b9ed3138fcc920f4ac0da4"
+  integrity sha512-o+vKp5kEBrd99TFQPExy2nWUTokQ8c7vVNuCO8dNKOG38YMKF5mGzDw+E+3lC+/H2oJN2gWG+WZu4/0HnW//bQ==
+
+"@reatom/effects@^3.2.0", "@reatom/effects@^3.7.0", "@reatom/effects@^3.7.3", "@reatom/effects@^3.8.2":
+  version "3.8.2"
+  resolved "https://registry.yarnpkg.com/@reatom/effects/-/effects-3.8.2.tgz#0612021bf818e1e8c8f1836b6b91d760bb0c047f"
+  integrity sha512-gnWH+fwdl+h45Oj+S7hJZ9OQE7nTukvAlARcFyL0vJEYk3mt4D0yaztcsfsrJ4mbYZlzwxl05kYrGbV9+KaVrQ==
+  dependencies:
+    "@reatom/core" "^3.2.0"
+    "@reatom/utils" "^3.5.0"
+
+"@reatom/eslint-plugin@^3.4.3":
+  version "3.4.3"
+  resolved "https://registry.yarnpkg.com/@reatom/eslint-plugin/-/eslint-plugin-3.4.3.tgz#7adf667fe72f74049d5961ad22d7401e5399b6c8"
+  integrity sha512-2LelP4G1FXq+89pmWfKyNLV7GtxmmiHJfl2vac9oJU7lT+eqvmWi4Pd0duAJhWTLxvg9g5S1SLeGQ7tAw/gxeg==
+
+"@reatom/framework@^3.4.47":
+  version "3.4.47"
+  resolved "https://registry.yarnpkg.com/@reatom/framework/-/framework-3.4.47.tgz#2efb4a483451ea1c0951ecba2b559ab7d14082b9"
+  integrity sha512-lxMADXcO4J2ddIUa6pO+5yVjWI03d+OwIRY+8SRwZWyejb7Ub+B1GQgE5KpWG8qjTS0+JLu+BePHpBOOxBRZ+w==
+  dependencies:
+    "@reatom/async" "^3.15.2"
+    "@reatom/core" "^3.8.3"
+    "@reatom/effects" "^3.8.2"
+    "@reatom/hooks" "^3.5.5"
+    "@reatom/lens" "^3.11.2"
+    "@reatom/logger" "^3.8.4"
+    "@reatom/primitives" "^3.7.2"
+    "@reatom/utils" "^3.9.2"
+
+"@reatom/hooks@^3.2.0", "@reatom/hooks@^3.3.1", "@reatom/hooks@^3.4.0", "@reatom/hooks@^3.5.5":
+  version "3.5.5"
+  resolved "https://registry.yarnpkg.com/@reatom/hooks/-/hooks-3.5.5.tgz#22f396385b68e0eeda343d22baa8eebb0dd88326"
+  integrity sha512-6exYUEB9MuqOaIMEaeiapar/TLx7fkrZnULBg5+gW2krhugzpDufapN6C7taiQuPS58NKLOQhVvz+ZzSQN5HbA==
+  dependencies:
+    "@reatom/core" "^3.2.0"
+    "@reatom/effects" "^3.7.0"
+    "@reatom/utils" "^3.3.0"
+
+"@reatom/lens@^3.1.0", "@reatom/lens@^3.11.2", "@reatom/lens@^3.4.0":
+  version "3.11.2"
+  resolved "https://registry.yarnpkg.com/@reatom/lens/-/lens-3.11.2.tgz#68555a79ed7d5ea7e45d570eb5180eb416f2db40"
+  integrity sha512-jDY8CiebPXODNsMDhUYAtglPW1Mi1I9LCfKR5U+nCEcGRF7A1KBsYy84Q9JyqOaZeQ4pM/nVQynVb88jRyx/UA==
+  dependencies:
+    "@reatom/core" "^3.4.0"
+    "@reatom/effects" "^3.2.0"
+    "@reatom/hooks" "^3.3.1"
+    "@reatom/primitives" "^3.6.0"
+    "@reatom/utils" "^3.1.0"
+
+"@reatom/logger@^3.8.4":
+  version "3.8.4"
+  resolved "https://registry.yarnpkg.com/@reatom/logger/-/logger-3.8.4.tgz#88880b7328de22cc12bd6c15f63606f5c667e346"
+  integrity sha512-MOz8Td1eZV+kU4QpkZXAdO9qFtGjqpm40crIlMNweDtOH7GgUmV2oKgOXRORQzYbeGHVMlQHG4J5iPeEQdM7KA==
+  dependencies:
+    "@reatom/core" "^3.8.1"
+    "@reatom/utils" "^3.9.0"
+
+"@reatom/npm-react@^3.8.9":
+  version "3.8.9"
+  resolved "https://registry.yarnpkg.com/@reatom/npm-react/-/npm-react-3.8.9.tgz#aab5ec20c4aa79ace7fc4703a4dd041ceb78d6f5"
+  integrity sha512-Z84tNybX23Orm8syPC5h3DrkMU/xmxBfphdb4MY3NMheE5zFOdcJyQCfWJ/1v0FM72nKSWD3YmE+WwFoTgabyA==
+  dependencies:
+    "@reatom/core" "^3.5.0"
+    "@reatom/effects" "^3.7.3"
+    "@reatom/lens" "^3.1.0"
+    "@reatom/utils" "^3.9.0"
+    use-sync-external-store "^1.2.0"
+
+"@reatom/persist@^3.3.3":
+  version "3.3.3"
+  resolved "https://registry.yarnpkg.com/@reatom/persist/-/persist-3.3.3.tgz#0f83741a0f44646ce6a2e8a8e22b4e7beeeb3862"
+  integrity sha512-5wuuzuYprrHN5n9czkUY9UH2k+9hDAQhj2eONB5T7ETcMGfJdcwnYMFEbetwcMML3ehBNlCxYyjrT7dbz93roQ==
+  dependencies:
+    "@reatom/core" "^3.3.0"
+    "@reatom/hooks" "^3.4.0"
+    "@reatom/lens" "^3.4.0"
+    "@reatom/utils" "^3.4.0"
+
+"@reatom/primitives@^3.5.0", "@reatom/primitives@^3.6.0", "@reatom/primitives@^3.7.2":
+  version "3.7.2"
+  resolved "https://registry.yarnpkg.com/@reatom/primitives/-/primitives-3.7.2.tgz#c061e5c145c46771788029c8cef4bda2c2131a72"
+  integrity sha512-AR4gJye9StjpPYbqR51m6fWPvIx8rmU/S9EWDpMytbKGC7I/ydCpHqoaWL+LrjHF79I7+RO88s88LVIBFOvJFg==
+  dependencies:
+    "@reatom/core" "^3.1.1"
+    "@reatom/utils" "^3.1.1"
+
+"@reatom/url@^3.7.3":
+  version "3.7.3"
+  resolved "https://registry.yarnpkg.com/@reatom/url/-/url-3.7.3.tgz#12b3228f44f2560703244df7604d945a70beee39"
+  integrity sha512-dysckwLw7ThZVjM8hgpk81KIpYMSzdnmUemKrqQE+E7/AUSw+YoN+Z9kpo3RYhqcWmiJ3EcvKyKhwvMRH3CRoQ==
+  dependencies:
+    "@reatom/core" "^3.5.0"
+    "@reatom/effects" "^3.7.0"
+    "@reatom/hooks" "^3.4.0"
+    "@reatom/utils" "^3.4.0"
+
+"@reatom/utils@^3.1.0", "@reatom/utils@^3.1.1", "@reatom/utils@^3.3.0", "@reatom/utils@^3.4.0", "@reatom/utils@^3.5.0", "@reatom/utils@^3.9.0", "@reatom/utils@^3.9.2":
+  version "3.9.2"
+  resolved "https://registry.yarnpkg.com/@reatom/utils/-/utils-3.9.2.tgz#2c63e14c445b8c28c33ad48febc6b9241b3bf335"
+  integrity sha512-sa64AQgtlMi6YBL9hrze21xPtyM63aZBUVgk2foQD/6jKjcX5YpWFLip0oHgUl3YkG+b2TYisLe5ufW216OGhg==
+
 "@rushstack/eslint-patch@^1.3.3":
   version "1.10.3"
   resolved "https://registry.yarnpkg.com/@rushstack/eslint-patch/-/eslint-patch-1.10.3.tgz#391d528054f758f81e53210f1a1eebcf1a8b1d20"
@@ -207,6 +322,11 @@
   version "0.0.29"
   resolved "https://registry.yarnpkg.com/@types/json5/-/json5-0.0.29.tgz#ee28707ae94e11d2b827bcbe5270bcea7f3e71ee"
   integrity sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==
+
+"@types/lodash@^4.14.167":
+  version "4.17.5"
+  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.17.5.tgz#e6c29b58e66995d57cd170ce3e2a61926d55ee04"
+  integrity sha512-MBIOHVZqVqgfro1euRDWX7OO0fBVUUMrN6Pwm8LQsz8cWhEpihlvR70ENj3f40j58TNxZaWv2ndSkInykNBBJw==
 
 "@types/node@^20":
   version "20.14.8"
@@ -1758,6 +1878,11 @@ lodash.merge@^4.6.2:
   resolved "https://registry.yarnpkg.com/lodash.merge/-/lodash.merge-4.6.2.tgz#558aa53b43b661e1925a0afdfa36a9a1085fe57a"
   integrity sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==
 
+lodash@^4.17.20:
+  version "4.17.21"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
+  integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
+
 loose-envify@^1.1.0, loose-envify@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/loose-envify/-/loose-envify-1.4.0.tgz#71ee51fa7be4caec1a63839f7e682d8132d30caf"
@@ -2234,6 +2359,11 @@ reusify@^1.0.4:
   resolved "https://registry.yarnpkg.com/reusify/-/reusify-1.0.4.tgz#90da382b1e126efc02146e90845a88db12925d76"
   integrity sha512-U9nH88a3fc/ekCF1l0/UP1IosiuIjyTh7hBvXVMHYgVcfGvt897Xguj2UOLDeI5BG2m7/uwyaLVT6fbtCwTyzw==
 
+rickmortyapi@2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/rickmortyapi/-/rickmortyapi-2.3.0.tgz#599492b81d44aed82b0be83f376a7cc576112807"
+  integrity sha512-YSAwmxS1OFRO1gYzxyZpijGXXJ5z1yDGT8U5kYqP5Qc4T3uWWQyQk8L7ty6R0HigIrGIXzht6xBpmshGhqn5sg==
+
 rimraf@^3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-3.0.2.tgz#f1a5402ba6220ad52cc1282bac1ae3aa49fd061a"
@@ -2356,6 +2486,7 @@ streamsearch@^1.1.0:
   integrity sha512-Mcc5wHehp9aXz1ax6bZUyY5afg9u2rv5cqQI3mRrYkGC8rW2hM02jWuwjtL++LS5qinSyhj2QfLyNsuc+VsExg==
 
 "string-width-cjs@npm:string-width@^4.2.0", string-width@^4.1.0:
+  name string-width-cjs
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/string-width/-/string-width-4.2.3.tgz#269c7117d27b05ad2e536830a8ec895ef9c6d010"
   integrity sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==
@@ -2428,6 +2559,7 @@ string.prototype.trimstart@^1.0.8:
     es-object-atoms "^1.0.0"
 
 "strip-ansi-cjs@npm:strip-ansi@^6.0.1", strip-ansi@^6.0.0, strip-ansi@^6.0.1:
+  name strip-ansi-cjs
   version "6.0.1"
   resolved "https://registry.yarnpkg.com/strip-ansi/-/strip-ansi-6.0.1.tgz#9e26c63d30f53443e9489495b2105d37b67a85d9"
   integrity sha512-Y38VPSHcqkFrCpFnQ9vuSXmquuv5oXOKpGeT6aGrr3o3Gc9AlVa6JBfUSOCnbxGGZF+/0ooI7KrPuUSztUdU5A==
@@ -2482,6 +2614,15 @@ supports-preserve-symlinks-flag@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz#6eda4bd344a3c94aea376d4cc31bc77311039e09"
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
+
+swapi-ts@1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/swapi-ts/-/swapi-ts-1.0.1.tgz#f1ec75c11f0f2fd58e7f266b175d5f73c3ea704a"
+  integrity sha512-/HVRfzqKUUEZvKByXbpoa7pdAdNxEX5IAc5+Xm2+PSZTixavkd7HoZOZ8hJl1xWc/Ukqe4Vqr6a98OQKbzwV3w==
+  dependencies:
+    "@types/lodash" "^4.14.167"
+    lodash "^4.17.20"
+    typescript "^4.1.3"
 
 tailwindcss@^3.4.1:
   version "3.4.4"
@@ -2623,6 +2764,11 @@ typed-array-length@^1.0.6:
     is-typed-array "^1.1.13"
     possible-typed-array-names "^1.0.0"
 
+typescript@^4.1.3:
+  version "4.9.5"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.9.5.tgz#095979f9bcc0d09da324d58d03ce8f8374cbe65a"
+  integrity sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==
+
 typescript@^5:
   version "5.5.2"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.5.2.tgz#c26f023cb0054e657ce04f72583ea2d85f8d0507"
@@ -2649,6 +2795,11 @@ uri-js@^4.2.2:
   integrity sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==
   dependencies:
     punycode "^2.1.0"
+
+use-sync-external-store@^1.2.0:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/use-sync-external-store/-/use-sync-external-store-1.2.2.tgz#c3b6390f3a30eba13200d2302dcdf1e7b57b2ef9"
+  integrity sha512-PElTlVMwpblvbNqQ82d2n6RjStvdSoNe9FG28kNfz3WiXilJm4DdNkEzRhCZuIDwY8U08WVihhGR5iRqAwfDiw==
 
 util-deprecate@^1.0.2:
   version "1.0.2"
