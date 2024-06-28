@@ -1,19 +1,18 @@
 'use client';
 
 import { PropsWithChildren } from "react";
-import { createCtx } from '@reatom/core'
-import { reatomContext } from '@reatom/npm-react'
 import { connectLogger } from "@reatom/framework";
-
-const ctx = createCtx()
+import { ReatomContextProvider } from "~/shared/lib/reatom-next-rsc";
 
 export function Providers({ children }: PropsWithChildren) {
 	return (
-		<reatomContext.Provider value={ctx}>
+		<ReatomContextProvider
+			extend={ctx => {
+				if (typeof window !== 'undefined')
+					connectLogger(ctx);
+			}}
+		>
 			{children}
-		</reatomContext.Provider>
+		</ReatomContextProvider>
 	);
 }
-
-if(typeof window !== 'undefined')
-	connectLogger(ctx);

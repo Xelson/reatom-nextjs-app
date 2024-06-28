@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./_prodivers";
+import { RouterSync } from "~/shared/lib/reatom-next-rsc";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,6 +21,8 @@ export default function RootLayout({
       <Providers>
         <body className={inter.className}>
           {children}
+
+          <RouterSync />
         </body>
       </Providers>
     </html>

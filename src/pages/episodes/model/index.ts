@@ -1,7 +1,7 @@
 import { withErrorAtom, withDataAtom } from '@reatom/async'
 import { reatomNumber, reatomResource, withCache, withStatusesAtom } from '@reatom/framework';
 import { searchParamsAtom, withSearchParamsPersist } from '@reatom/url'
-import { getCharacters } from 'rickmortyapi'
+import { getEpisodes } from 'rickmortyapi'
 import { withSsr } from '~/shared/lib/reatom-next-rsc';
 
 export const pageAtom = reatomNumber(1, 'pageAtom').pipe(
@@ -10,17 +10,17 @@ export const pageAtom = reatomNumber(1, 'pageAtom').pipe(
 
 export const searchAtom = searchParamsAtom.lens('search');
 
-export const fetchCharacters = reatomResource(
+export const fetchEpisodes = reatomResource(
 	async (ctx) => {
 		const query = ctx.spy(searchAtom)
 		const page = ctx.spy(pageAtom)
 
-		return ctx.schedule(() => getCharacters({
+		return ctx.schedule(() => getEpisodes({
 			page,
 			name: query
 		}))
 	},
-	"fetchCharacters"
+	"fetchEpisodes"
 ).pipe(
 	withDataAtom(null, (ctx, { data }) => data),
 	withErrorAtom(),
@@ -38,4 +38,4 @@ export const {
 	dataAtom,
 	errorAtom,
 	statusesAtom
-} = fetchCharacters
+} = fetchEpisodes

@@ -11,13 +11,12 @@
   "dependencies": {
     "@reatom/framework": "^3.4.47",
     "@reatom/npm-react": "^3.8.9",
-    "@reatom/persist": "^3.3.3",
+    "@reatom/persist": "^3.3.4",
     "@reatom/url": "^3.7.3",
     "next": "14.2.4",
     "react": "^18",
     "react-dom": "^18",
-    "rickmortyapi": "2.3.0",
-    "swapi-ts": "1.0.1"
+    "rickmortyapi": "2.3.0"
   },
   "devDependencies": {
     "@reatom/eslint-plugin": "^3.4.3",

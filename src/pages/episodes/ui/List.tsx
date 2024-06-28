@@ -14,7 +14,7 @@ export function List() {
 
 	return (
 		<div className='flex flex-col gap-[1rem] mx-auto w-[20rem]'>
-			<Link href='/episodes'>to episodes</Link>
+			<Link href='/'>to characters</Link>
 
 			<input
 				defaultValue={search}
@@ -30,11 +30,7 @@ export function List() {
 			<div className={status.isPending ? 'opacity-80' : undefined}>
 				{list?.results?.map(c => (
 					<div className='flex gap-[1rem] items-center' key={c.id}>
-						<img
-							src={c.image}
-							className='size-8 rounded-full'
-							alt=''
-						/>
+						<span>{c.episode}</span>
 
 						{c.name}
 					</div>

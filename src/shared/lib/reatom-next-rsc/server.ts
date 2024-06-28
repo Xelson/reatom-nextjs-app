@@ -2,7 +2,6 @@ import { Ctx, Fn, Rec, createCtx, jsonClone, takeNested } from "@reatom/framewor
 import { setupUrlAtomSettings } from "@reatom/url";
 import { snapshotAtom } from "./persist";
 import { PersistRecord } from "@reatom/persist";
-import { fetchCharacters } from "~/pages/characters/model";
 
 interface TakeSnapshotApi {
 	prefetch: <I extends any[]>(cb: Fn<[Ctx, ...I]>, ...params: I) => Promise<void>
@@ -38,12 +37,6 @@ export async function takeSnapshot({ handler, env = {} }: TakeSnapshotOptions): 
 	})
 
 	const snapshot = jsonClone(ctx.get(snapshotAtom));
-
-	// wtf?
-	console.log('ctx.get', 
-		ctx.get(fetchCharacters.dataAtom)?.results?.[0].name,
-		(snapshot as any)?.['fetchCharacters._cacheAtom']?.data?.[0]?.[1].value.data.results[0].name
-	);
 
 	return {
 		url: url.toString(),
